@@ -1,0 +1,32 @@
+import java.util.*;
+public class sol{
+    public static final int size=3;
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int[] al=new int[size];
+        int[] bl=new int[size];
+        
+        for(int i=0;i<size;i++)
+        al[i]=sc.nextInt();
+
+        for(int i=0;i<size;i++)
+        bl[i]=sc.nextInt();
+
+        int ascore=0;
+        int bscore=0;
+
+        for(int i=0;i<size;i++){
+            if(al[i]>bl[i])
+            {
+                ascore++;
+            }
+            if(bl[i]>al[i])
+            {
+                bscore++;
+            }
+        }
+        System.out.println(ascore+" "+bscore);
+
+    }
+}
